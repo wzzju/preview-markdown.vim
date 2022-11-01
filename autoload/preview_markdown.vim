@@ -109,7 +109,7 @@ function! preview_markdown#preview(...) abort
   endif
 
   let opencmd = s:to_excmd(a:000)
-  let cmd = printf("%s %s", parser, tmp)
+  let cmd = printf("%s -p %s", parser, tmp)
 
   if has('nvim')
     let opt = {
